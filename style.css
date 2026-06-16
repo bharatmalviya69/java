@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.dashboard-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+input::placeholder {
+    color: #ddd;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #00d2ff;
+    color: #1e3c72;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #00a8cc;
+}
+
+.weather-card, .error-card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.error-card {
+    background: rgba(255, 75, 75, 0.2);
+    border: 1px solid #ff4b4b;
+    color: #ffcccc;
+}
+
+.hidden {
+    display: none;
+}
+
+#location-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.main-info {
+    margin: 15px 0;
+}
+
+#temperature {
+    font-size: 3.5rem;
+    font-weight: bold;
+    display: block;
+}
+
+#weather-desc {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 15px 0;
+}
+
+.metrics-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.metric-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 0.85rem;
+    color: #cbd5e1;
+    margin-bottom: 5px;
+}
+
+.value {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
